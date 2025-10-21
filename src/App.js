@@ -1,5 +1,5 @@
 import { Route } from 'react-router-dom/cjs/react-router-dom.min';
-import { BrowserRouter, Switch } from 'react-router-dom'
+import { BrowserRouter, Switch, Redirect } from 'react-router-dom'
 import Home from './pages/Home';
 import Toolbar from './components/ToolBar/Toolbar';
 import BottomNav from './components/BottomNav/BottomNav';
@@ -23,6 +23,10 @@ function App() {
               <Route path="/groups" component={GroupsPage} />
               <Route exact path="/chat/:id" component={ChatThread} />
               <Route path="/chat" component={ChatsList} />
+
+              <Route path="*">
+              <Redirect to="/" />
+            </Route>
             </Switch>
           </div>
           <BottomNav />
