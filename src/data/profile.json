@@ -1,0 +1,18 @@
+{
+  "id": "you",
+  "name": "Rebecca Lim",
+  "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=512&auto=format&fit=crop",
+  "location": "From China",
+  "about": "First-year CS student from China. Love exploring Singapore and meeting new people!",
+  "academics": {
+    "major": "Computer Science",
+    "year": 2
+  },
+  "courses": ["Data Structures", "Algorithm Design", "Database Systems"],
+  "interests": ["Gaming", "Photography", "Travel", "Food", "Music"],
+  "stats": {
+    "buddies": 12,
+    "groups": 4,
+    "events": 23
+  }
+}

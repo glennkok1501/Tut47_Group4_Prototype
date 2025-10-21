@@ -1,0 +1,62 @@
+/* Bar container (fixed at bottom) */
+.bottom-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1040;                 /* above content/footer */
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+
+  background: #ffffff;
+  border-top: 1px solid #e9ecef;
+
+  /* Safe-area padding for iOS notches */
+  padding:
+    8px
+    max(12px, env(safe-area-inset-right))
+    calc(8px + env(safe-area-inset-bottom))
+    max(12px, env(safe-area-inset-left));
+}
+
+/* Each tab */
+.bottom-nav__item {
+  flex: 1 1 0;
+  min-width: 56px;               /* comfortable touch target */
+  text-align: center;
+  background: transparent;
+  border: 0;
+  padding: 6px 4px;
+  border-radius: 12px;
+  color: #667085;                /* slate-ish gray */
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Icon + label */
+.bottom-nav__icon {
+  display: block;
+  font-size: 24px;               /* if using react-icons, keep ~22–24px */
+  line-height: 1;
+}
+.bottom-nav__label {
+  display: block;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Active state (orange like your UI) */
+.bottom-nav__item.is-active,
+.bottom-nav__item.is-active .bottom-nav__icon {
+  color: #ff6a00;                /* orange highlight */
+  font-weight: 600;
+}
+
+/* Hover/focus feedback (desktop) */
+.bottom-nav__item:hover,
+.bottom-nav__item:focus-visible {
+  background: #f7f7f9;
+}

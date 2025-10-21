@@ -1,0 +1,129 @@
+.profile {
+  padding: 12px;
+  background: #f7f8fb;
+}
+
+/* Card shell */
+.card {
+  background: #fff;
+  border: 1px solid #eceff4;
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 14px;
+  box-shadow: 0 1px 0 rgba(16,24,40,.02);
+}
+
+.card__title {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #121826;
+}
+
+.card__subtitle {
+  margin: 18px 0 10px;
+  font-weight: 700;
+  color: #121826;
+}
+
+.card__body {
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* Header card */
+.profile__header {
+  text-align: center;
+  padding-top: 24px;
+}
+
+.profile__avatar {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.profile__name {
+  margin: 4px 0 4px;
+  font-weight: 800;
+}
+
+.profile__location {
+  color: #6b7280;
+  margin-bottom: 14px;
+}
+
+.profile__edit {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 700;
+}
+
+/* Chips */
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.chip--blue {
+  background: #e6efff;
+  color: #2563eb;
+}
+
+.chip--purple {
+  background: #f1e9ff;
+  color: #7c3aed;
+}
+
+/* Settings list */
+.settings {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+.settings a,
+.settings button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 6px;
+  border: 0;
+  background: none;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 600;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+.settings__danger button { color: #e11d48; }
+
+/* Stats */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+.stat__num { font-size: 28px; font-weight: 800; }
+.stat__label { color: #6b7280; }

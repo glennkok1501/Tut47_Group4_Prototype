@@ -1,0 +1,117 @@
+.connections {
+  margin-top: 12px;
+}
+
+/* Header */
+.connections__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4px 0 12px;
+}
+.connections__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.connections__title h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+.connections__viewall {
+  background: transparent;
+  border: 0;
+  color: #111827;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* List */
+.connections__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+/* Card */
+.connection-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+  border: 1px solid #e9edf2;
+  border-radius: 18px;
+  padding: 16px 18px;
+  box-shadow: 0 1px 0 rgba(16, 24, 40, 0.02);
+}
+.connection-card:hover {
+  border-color: #e3e8ef;
+  box-shadow: 0 4px 14px rgba(16, 24, 40, 0.06);
+}
+
+/* Left section */
+.connection-card__left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+.connection-card__avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.connection-card__info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.connection-card__row {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.connection-card__name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+.connection-card__pill {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #047857;
+  background: #d1fae5;
+}
+.connection-card__sub {
+  margin-top: 4px;
+  font-size: 16px;
+  color: #384250;
+}
+
+/* Right icon */
+.connection-card__trend {
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .connection-card {
+    padding: 14px;
+    border-radius: 14px;
+  }
+  .connection-card__name { font-size: 18px; }
+  .connection-card__sub { font-size: 14px; }
+  .connection-card__avatar { width: 48px; height: 48px; }
+}
