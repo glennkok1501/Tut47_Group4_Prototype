@@ -18,6 +18,7 @@ function App() {
           <div style={{ marginTop: '80px', paddingBottom: '125px' }}>
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route path="/Tut47_Group4_Prototype" component={Home} />
               <Route path="/profile" component={ProfilePage} />
               <Route path="/connections" component={ConnectionsPage} />
               <Route path="/groups" component={GroupsPage} />
