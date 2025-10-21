@@ -24,9 +24,9 @@ function App() {
               <Route exact path="/chat/:id" component={ChatThread} />
               <Route path="/chat" component={ChatsList} />
 
-              <Route path="*">
-              <Redirect to="/" />
-            </Route>
+              <Route path="/*">
+                <Redirect to="/" />
+              </Route>
             </Switch>
           </div>
           <BottomNav />
