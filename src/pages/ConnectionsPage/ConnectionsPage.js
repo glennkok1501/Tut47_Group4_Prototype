@@ -1,17 +1,32 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useLocation } from "react-router-dom";
-import connections from "../../data/connections.json";
+import allConnections from "../../data/connections.json";
 import "./ConnectionsPage.css";
+
+const FALLBACK_PHOTO =
+  "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg";
 
 const ConnectionsPage = () => {
   const { state } = useLocation();
-  const [activeTab, setActiveTab] = useState("discover");
-  const [index, setIndex] = useState(0);
 
-  const connection = state?.connection || connections[index];
+  // If we navigated with state, find that person’s index; else 0
+  const initialIndex = useMemo(() => {
+    if (state?.connection?.id) {
+      const idx = allConnections.findIndex((c) => c.id === state.connection.id);
+      return idx >= 0 ? idx : 0;
+    }
+    return 0;
+  }, [state]);
+
+  const [activeTab, setActiveTab] = useState("discover");
+  const [index, setIndex] = useState(initialIndex);
+
+  const list = allConnections; // keep rename for clarity
+  const connection = list[index] || state?.connection || {};
 
   const handleNext = () => {
-    setIndex((prev) => (prev + 1) % connections.length); // loops to start
+    if (list.length === 0) return;
+    setIndex((prev) => (prev + 1) % list.length);
   };
 
   return (
@@ -39,56 +54,67 @@ const ConnectionsPage = () => {
             <div className="cp-photo-wrap">
               <img
                 className="cp-photo"
-                src={connection.photo}
-                alt={connection.name}
+                src={connection.photo || FALLBACK_PHOTO}
+                alt={connection.name || "Profile photo"}
+                onError={(e) => (e.currentTarget.src = FALLBACK_PHOTO)}
               />
-              <div className="cp-badge">
-                <span>✨</span> {connection.score}% Match
-              </div>
+              {typeof connection.score === "number" && (
+                <div className="cp-badge">
+                  <span>✨</span> {connection.score}% Match
+                </div>
+              )}
             </div>
 
             <div className="cp-body">
-              <h2 className="cp-name">{connection.name}</h2>
-              <p className="cp-location">📍 {connection.location}</p>
-              <p className="cp-about">{connection.about}</p>
+              <h2 className="cp-name">{connection.name || "Unknown"}</h2>
+              {connection.location && (
+                <p className="cp-location">📍 {connection.location}</p>
+              )}
+              {connection.about && <p className="cp-about">{connection.about}</p>}
 
-              <section className="cp-section">
-                <h4 className="cp-section-title">🎓 Major</h4>
-                <p className="cp-major">
-                  {connection.major} • Year {connection.year}
-                </p>
-              </section>
+              {(connection.major || connection.year) && (
+                <section className="cp-section">
+                  <h4 className="cp-section-title">🎓 Major</h4>
+                  <p className="cp-major">
+                    {connection.major || "—"} • Year {connection.year ?? "—"}
+                  </p>
+                </section>
+              )}
 
-              <section className="cp-section">
-                <h4 className="cp-section-title">📚 Courses</h4>
-                <div className="cp-chips">
-                  {connection.courses.map((c) => (
-                    <span key={c} className="cp-chip cp-chip--blue">
-                      {c}
-                    </span>
-                  ))}
-                </div>
-              </section>
+              {Array.isArray(connection.courses) && connection.courses.length > 0 && (
+                <section className="cp-section">
+                  <h4 className="cp-section-title">📚 Courses</h4>
+                  <div className="cp-chips">
+                    {connection.courses.map((c) => (
+                      <span key={c} className="cp-chip cp-chip--blue">
+                        {c}
+                      </span>
+                    ))}
+                  </div>
+                </section>
+              )}
 
-              <section className="cp-section">
-                <h4 className="cp-section-title">🤍 Interests</h4>
-                <div className="cp-chips">
-                  {connection.interests.map((i) => (
-                    <span key={i} className="cp-chip cp-chip--purple">
-                      {i}
-                    </span>
-                  ))}
-                </div>
-              </section>
+              {Array.isArray(connection.interests) && connection.interests.length > 0 && (
+                <section className="cp-section">
+                  <h4 className="cp-section-title">🤍 Interests</h4>
+                  <div className="cp-chips">
+                    {connection.interests.map((i) => (
+                      <span key={i} className="cp-chip cp-chip--purple">
+                        {i}
+                      </span>
+                    ))}
+                  </div>
+                </section>
+              )}
             </div>
           </div>
 
-          {/* Buttons */}
+          {/* Actions */}
           <div className="cp-actions">
-            <button className="cp-btn cp-btn--ghost" onClick={handleNext}>
+            <button className="cp-btn cp-btn--ghost" onClick={handleNext} aria-label="Pass">
               ✕
             </button>
-            <button className="cp-btn cp-btn--connect" onClick={handleNext}>
+            <button className="cp-btn cp-btn--connect" onClick={handleNext} aria-label="Connect">
               👥
             </button>
           </div>
