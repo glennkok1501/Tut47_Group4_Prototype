@@ -14,14 +14,14 @@ export default function MyGroups() {
     <section className="mg">
       <header className="mg__header">
         <h3>My Groups</h3>
-        <Link to="/groups" className="mg__viewall">View All</Link>
+        <Link to="/Tut47_Group4_Prototype/groups" className="mg__viewall">View All</Link>
       </header>
 
       <div className="mg__grid">
         {myGroups.map(g => (
           <Link
             key={g.id}
-            to={`/groups/${g.id}`}
+            to={`/Tut47_Group4_Prototype/groups/${g.id}`}
             className="mg__card"
             aria-label={`${g.name}, ${g.members} members`}
           >
@@ -42,7 +42,7 @@ export default function MyGroups() {
         {/* empty state if user hasn't joined any */}
         {myGroups.length === 0 && (
           <div className="mg__empty">
-            You haven’t joined any groups yet. Explore the <Link to="/groups">Discover</Link> tab.
+            You haven’t joined any groups yet. Explore the <Link to="/Tut47_Group4_Prototype/groups">Discover</Link> tab.
           </div>
         )}
       </div>

@@ -11,7 +11,7 @@ const ConnectionsList = () => (
         <span style={{ color: "#ff6a00", fontSize: 18 }}>✦</span>
         <h3>New Connections for You</h3>
       </div>
-      <Link to="/connections" className="connections__viewall-link">
+      <Link to="/Tut47_Group4_Prototype/connections" className="connections__viewall-link">
         View All
       </Link>
     </header>
@@ -21,7 +21,7 @@ const ConnectionsList = () => (
         <li key={c.id} className="connection-card">
           <Link
             to={{
-              pathname: "/connections",
+              pathname: "/Tut47_Group4_Prototype/connections",
               state: { connection: c },
             }}
             className="connection-card__left"
