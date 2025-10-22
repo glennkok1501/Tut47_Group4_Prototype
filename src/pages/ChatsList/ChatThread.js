@@ -51,7 +51,7 @@ export default function ChatThread() {
     <div className="thread">
       {/* Header */}
       <header className="thread__header">
-        <Link to="/chat" className="thread__back" aria-label="Back">←</Link>
+        <Link to="/Tut47_Group4_Prototype/chat" className="thread__back" aria-label="Back">←</Link>
         <img
           className="thread__avatar"
           src={thread.person.avatar}

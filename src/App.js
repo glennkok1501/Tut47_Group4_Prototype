@@ -21,7 +21,7 @@ function App() {
               <Route path="/Tut47_Group4_Prototype/profile" component={ProfilePage} />
               <Route path="/Tut47_Group4_Prototype/connections" component={ConnectionsPage} />
               <Route path="/Tut47_Group4_Prototype/groups" component={GroupsPage} />
-              <Route exact path="/chat/:id" component={ChatThread} />
+              <Route exact path="/Tut47_Group4_Prototype/chat/:id" component={ChatThread} />
               <Route path="/Tut47_Group4_Prototype/chat" component={ChatsList} />
               
             </Switch>

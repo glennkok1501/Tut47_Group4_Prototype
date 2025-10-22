@@ -33,7 +33,7 @@ export default function ChatsList() {
         {items.map((t) => {
           const last = t.messages[t.messages.length - 1];
           return (
-            <Link key={t.id} to={`/chat/${t.id}`} className="chat-item">
+            <Link key={t.id} to={`/Tut47_Group4_Prototype/chat/${t.id}`} className="chat-item">
               <img
                 className="chat-item__avatar"
                 src={t.person.avatar}
