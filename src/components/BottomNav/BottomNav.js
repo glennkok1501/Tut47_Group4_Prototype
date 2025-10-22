@@ -4,10 +4,10 @@ import "./BottomNav.css";
 
 const TABS = [
   { key: "home", label: "Home", emoji: "🏠", url: "/Tut47_Group4_Prototype" },
-  { key: "match", label: "Match", emoji: "👥", url: "/connections" },
-  { key: "groups", label: "Groups", emoji: "🔳", url: "/groups" },
-  { key: "chat", label: "Chat", emoji: "💬", url: "/chat" },
-  { key: "profile", label: "Profile", emoji: "👤", url: "/profile" },
+  { key: "match", label: "Match", emoji: "👥", url: "/Tut47_Group4_Prototype/connections" },
+  { key: "groups", label: "Groups", emoji: "🔳", url: "/Tut47_Group4_Prototype/groups" },
+  { key: "chat", label: "Chat", emoji: "💬", url: "/Tut47_Group4_Prototype/chat" },
+  { key: "profile", label: "Profile", emoji: "👤", url: "/Tut47_Group4_Prototype/profile" },
 ];
 
 const BottomNav = () => {

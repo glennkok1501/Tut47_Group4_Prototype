@@ -1,5 +1,5 @@
 import { Route } from 'react-router-dom/cjs/react-router-dom.min';
-import { BrowserRouter, Switch, Redirect } from 'react-router-dom'
+import { BrowserRouter, Switch  } from 'react-router-dom'
 import Home from './pages/Home';
 import Toolbar from './components/ToolBar/Toolbar';
 import BottomNav from './components/BottomNav/BottomNav';
@@ -18,15 +18,12 @@ function App() {
           <div style={{ marginTop: '80px', paddingBottom: '125px' }}>
             <Switch>
               <Route exact path="/Tut47_Group4_Prototype" component={Home} />
-              <Route path="/profile" component={ProfilePage} />
-              <Route path="/connections" component={ConnectionsPage} />
-              <Route path="/groups" component={GroupsPage} />
+              <Route path="/Tut47_Group4_Prototype/profile" component={ProfilePage} />
+              <Route path="/Tut47_Group4_Prototype/connections" component={ConnectionsPage} />
+              <Route path="/Tut47_Group4_Prototype/groups" component={GroupsPage} />
               <Route exact path="/chat/:id" component={ChatThread} />
-              <Route path="/chat" component={ChatsList} />
-
-              <Route path="/*">
-                <Redirect to="/Tut47_Group4_Prototype" />
-              </Route>
+              <Route path="/Tut47_Group4_Prototype/chat" component={ChatsList} />
+              
             </Switch>
           </div>
           <BottomNav />
