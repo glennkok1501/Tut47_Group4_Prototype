@@ -17,7 +17,7 @@ function App() {
           <BrowserRouter>
           <div style={{ marginTop: '80px', paddingBottom: '125px' }}>
             <Switch>
-              <Route exact path="/" component={Home} />
+              <Route exact path="/Tut47_Group4_Prototype" component={Home} />
               <Route path="/profile" component={ProfilePage} />
               <Route path="/connections" component={ConnectionsPage} />
               <Route path="/groups" component={GroupsPage} />
@@ -25,7 +25,7 @@ function App() {
               <Route path="/chat" component={ChatsList} />
 
               <Route path="/*">
-                <Redirect to="/" />
+                <Redirect to="/Tut47_Group4_Prototype" />
               </Route>
             </Switch>
           </div>

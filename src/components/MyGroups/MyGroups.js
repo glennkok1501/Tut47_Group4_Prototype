@@ -4,7 +4,7 @@ import groups from "../../data/groups.json";      // centralized data
 import "./MyGroups.css";
 
 const FALLBACK_IMG =
-  "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1200&auto=format&fit=crop"; // neutral campus/classroom
+  "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=720&auto=format&fit=crop"; // neutral campus/classroom
 
 export default function MyGroups() {
   // joined only, limit to 4

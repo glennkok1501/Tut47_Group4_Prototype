@@ -4,7 +4,7 @@
     "name": "International Foodies",
     "category": "Food & Culture",
     "members": 156,
-    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=720&auto=format&fit=crop",
     "description": "Explore Singapore's diverse food scene together! From hawker centers to fancy restaurants.",
     "joined": true
   },
@@ -13,7 +13,7 @@
     "name": "NTU Gaming Squad",
     "category": "Gaming",
     "members": 203,
-    "image": "https://images.unsplash.com/photo-1603565816061-50c2d6b9c5a0?q=80&w=1200&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1603565816061-50c2d6b9c5a0?q=80&w=720&auto=format&fit=crop",
     "description": "Gamers unite! Play tournaments, share tips, and have fun.",
     "joined": true
   },
@@ -22,7 +22,7 @@
     "name": "Study Buddies - CS",
     "category": "Academics",
     "members": 112,
-    "image": "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1200&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=720&auto=format&fit=crop",
     "description": "Form study groups, share notes, and support one another for CS modules.",
     "joined": true
   },
@@ -31,7 +31,7 @@
     "name": "Weekend Explorers",
     "category": "Travel & Adventure",
     "members": 98,
-    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=720&auto=format&fit=crop",
     "description": "Love hiking and adventure? Explore new places every weekend!",
     "joined": true
   },
@@ -40,7 +40,7 @@
     "name": "Photography Walks",
     "category": "Hobbies",
     "members": 89,
-    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1200&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=720&auto=format&fit=crop",
     "description": "Capture Singapore’s beauty together. Weekly photo walks around campus.",
     "joined": false
   },
@@ -49,7 +49,7 @@
     "name": "Campus Musicians",
     "category": "Arts & Music",
     "members": 142,
-    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1200&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=720&auto=format&fit=crop",
     "description": "Jam sessions, open mics, and performances — for musicians of all levels.",
     "joined": false
   },
@@ -58,7 +58,7 @@
     "name": "Film Enthusiasts",
     "category": "Arts & Culture",
     "members": 76,
-    "image": "https://images.unsplash.com/photo-1497032205916-ac775f0649ae?q=80&w=1200&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1497032205916-ac775f0649ae?q=80&w=720&auto=format&fit=crop",
     "description": "Watch, discuss, and critique films together weekly.",
     "joined": false
   },
@@ -67,7 +67,7 @@
     "name": "Campus Fitness Crew",
     "category": "Health & Fitness",
     "members": 190,
-    "image": "https://images.unsplash.com/photo-1599058917212-d750089bc07c?q=80&w=1200&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1599058917212-d750089bc07c?q=80&w=720&auto=format&fit=crop",
     "description": "Workout buddies and weekend fitness challenges!",
     "joined": false
   },
@@ -76,7 +76,7 @@
     "name": "Language Exchange NTU",
     "category": "Culture & Learning",
     "members": 132,
-    "image": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=1200&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=720&auto=format&fit=crop",
     "description": "Learn new languages and cultures through fun conversation sessions.",
     "joined": false
   },
@@ -85,7 +85,7 @@
     "name": "Young Entrepreneurs Network",
     "category": "Business",
     "members": 215,
-    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=720&auto=format&fit=crop",
     "description": "Connect with startup-minded students and future founders.",
     "joined": false
   },
@@ -94,7 +94,7 @@
     "name": "Community Volunteers",
     "category": "Service",
     "members": 121,
-    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=720&auto=format&fit=crop",
     "description": "Make a difference by helping local communities together.",
     "joined": false
   },
@@ -103,7 +103,7 @@
     "name": "Readers Circle",
     "category": "Hobbies",
     "members": 77,
-    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1200&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=720&auto=format&fit=crop",
     "description": "Read and discuss books across genres every month.",
     "joined": false
   },
@@ -112,7 +112,7 @@
     "name": "Tech Innovators",
     "category": "Technology",
     "members": 188,
-    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=720&auto=format&fit=crop",
     "description": "Explore AI, robotics, and emerging technologies through projects.",
     "joined": false
   },
@@ -121,7 +121,7 @@
     "name": "Investing & Finance Club",
     "category": "Finance",
     "members": 95,
-    "image": "https://images.unsplash.com/photo-1569025690938-a00729c9e1c4?q=80&w=1200&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1569025690938-a00729c9e1c4?q=80&w=720&auto=format&fit=crop",
     "description": "Learn investing and personal finance in an interactive way.",
     "joined": false
   },
@@ -130,7 +130,7 @@
     "name": "Esports Arena",
     "category": "Gaming",
     "members": 149,
-    "image": "https://images.unsplash.com/photo-1607853202273-797f1c80c9f3?q=80&w=1200&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1607853202273-797f1c80c9f3?q=80&w=720&auto=format&fit=crop",
     "description": "Competitive gaming for NTU students — join tournaments and teams.",
     "joined": false
   }

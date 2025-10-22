@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./BottomNav.css";
 
 const TABS = [
-  { key: "home", label: "Home", emoji: "🏠", url: "/" },
+  { key: "home", label: "Home", emoji: "🏠", url: "/Tut47_Group4_Prototype" },
   { key: "match", label: "Match", emoji: "👥", url: "/connections" },
   { key: "groups", label: "Groups", emoji: "🔳", url: "/groups" },
   { key: "chat", label: "Chat", emoji: "💬", url: "/chat" },
